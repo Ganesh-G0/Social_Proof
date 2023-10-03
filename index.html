@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Social proof section</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+      :root {
+        --Very-Dark-Magenta: hsl(300, 43%, 22%);
+        --Soft-Pink: hsl(333, 80%, 67%);
+        --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+        --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+        --White: hsl(0, 0%, 100%);
+      }
+      img {
+        width: 20%;
+        margin-right: 1rem;
+      }
+      section {
+        margin: 1rem;
+        padding: 1.5rem;
+        border-radius: 0.4rem;
+        background: var(--Very-Dark-Magenta);
+        color: white;
+      }
+      .five-star {
+        width: 18rem;
+        padding: 0.51rem 1.5rem;
+        border-radius: 0.4rem;
+        background: var(--Light-Grayish-Magenta);
+      }
+      .five-star > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .five-star > div > img {
+        margin: .2rem;
+        width: 8%;
+      }
+      .five-star > h2 {
+        font-size: 1rem;
+        padding: 0.3rem;
+        font-weight: bold;
+        color: var(--Very-Dark-Magenta);
+      }
+      .user {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        margin-right: 3rem;
+        margin-bottom: 1rem;
+      }
+      @media (min-width: 1024px) {
+        .five-star {
+          width: 26rem;
+          display: flex;
+        }
+        .five-star > div {
+          justify-content: start;
+        }
+        .five-star > div > img {
+          margin: .2rem;
+          width: 14%;
+        }
+        .five-star > h2 {
+          font-size: 1.1rem;
+        }
+        
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            screens: {
+              mobile: "375px",
+              desktop: "1440px",
+            },
+            colors: {
+              vdm: "hsl(300, 43%, 22%)",
+              sp: "hsl(333, 80%, 67%)",
+              dgm: "hsl(303, 10%, 53%)",
+              attribution: "hsl(228, 45%, 44%)",
+            },
+            fontFamily: {
+              primary: ["League Spartan", "sans-serif"],
+            },
+            fontSize: {
+              body: "15px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-primary text-body flex flex-col justify-center items-center">
+    <main class="container w-[345px] flex flex-col justify-center items-center lg:w-[1085px] lg:h-[100dvh]">
+      <div class="text-center lg:text-start lg:flex">
+        <div class="p-5 lg:px-2 lg:w-3/6">
+          <h1 class="text-vdm text-4xl font-black tracking-tighter p-5 lg:text-6xl">
+            10,000+ of our users love our products.
+          </h1>
+          <p class="px-3 text-dgm font-medium text-md lg:text-lg lg:font-bold">
+            We only provide great products combined with excellent customer service.
+            See what our satisfied customers are saying about our services.
+          </p>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-5 
+        lg:w-3/6">
+          <div class="five-star">
+            <div class="">
+              <img src="./images/icon-star.svg" alt="5 Starts">
+              <img src="./images/icon-star.svg" alt="5 Starts">
+              <img src="./images/icon-star.svg" alt="5 Starts">
+              <img src="./images/icon-star.svg" alt="5 Starts">
+              <img src="./images/icon-star.svg" alt="5 Starts">
+            </div>
+            <h2>Rated 5 Stars in Reviews</h2>
+          </div>
+          <div class="five-star lg:ml-[2rem]">
+            <div class="">
+              <img src="./images/icon-star.svg" alt="5 Starts">
+              <img src="./images/icon-star.svg" alt="5 Starts">
+              <img src="./images/icon-star.svg" alt="5 Starts">
+              <img src="./images/icon-star.svg" alt="5 Starts">
+              <img src="./images/icon-star.svg" alt="5 Starts">
+            </div>
+            <h2>Rated 5 Stars in Report Guru</h2>
+          </div>
+          <div class="five-star lg:ml-[4rem]">
+            <div class="">
+              <img src="./images/icon-star.svg" alt="5 Starts">
+              <img src="./images/icon-star.svg" alt="5 Starts">
+              <img src="./images/icon-star.svg" alt="5 Starts">
+              <img src="./images/icon-star.svg" alt="5 Starts">
+              <img src="./images/icon-star.svg" alt="5 Starts">
+            </div>
+            <h2>Rated 5 Stars in BestTech</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center lg:flex lg:justify-center lg:items-center">
+        <section class="">
+          <div class="user ">
+            <img class="rounded-full" src="./images/image-colton.jpg" alt="Profile">
+            <h2>Colton Smith  
+              <br>
+              <span class="text-sp">Verified Buyer</span>
+            </h2>
+          </div>
+          <p>
+            "We needed the same printed design as the one we had ordered a week prior. 
+            Not only did they find the original order, but we also received it in time. Excellent!"
+          </p>
+        </section>
+        <section class="mt-[3rem]">
+          <div class="user ">
+            <img class="rounded-full" src="./images/image-irene.jpg" alt="Profile">
+            <h2> Irene Roberts
+              <br>
+              <span class="text-sp">Verified Buyer</span>
+            </h2>
+          </div>
+          <p>
+            "Customer service is always excellent and very quick turn around.
+            Completely delighted with the simplicity of the purchase and the speed of delivery."
+          </p>
+        </section>
+        <section class="mt-[5rem]">
+          <div class="user ">
+            <img class="rounded-full" src="./images/image-anne.jpg" alt="Profile" >
+            <h2> Anne Wallace
+              <br>
+              <span class="text-sp">Verified Buyer</span>
+            </h2>
+          </div>
+          <p>
+            "Put an order with this company and can only praise them for the very high standard.
+            Will definitely use them again and recommend them to everyone!"
+          </p>
+        </section>
+      </div>
+  </main>
+  <footer class="attribution text-center text-lg"> Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-attribution">Frontend Mentor</a>
+    <br>Coded by
+    <a href="https://www.frontendmentor.io/profile/Ganesh-G0" target="_blank" class="text-attribution">Ganesh</a>
+  </footer>
+</body>
+</html>
